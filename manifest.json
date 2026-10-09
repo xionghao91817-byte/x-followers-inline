@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "X 粉丝数直显",
+  "version": "1.0.0",
+  "description": "在 X 帖子作者的 ID 旁显示中文粉丝数，仅使用网页已经加载的数据。",
+  "minimum_chrome_version": "111",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["inline.js"],
+      "css": ["inline.css"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}

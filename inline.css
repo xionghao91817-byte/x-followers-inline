@@ -1,0 +1,25 @@
+.xfi-id-row {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  min-width: 0;
+}
+.xfi-id-row > a {
+  min-width: 0;
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.xfi-count {
+  color: #536471;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  .xfi-count { color: #8b98a5; }
+}
